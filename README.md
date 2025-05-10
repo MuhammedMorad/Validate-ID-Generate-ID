@@ -54,17 +54,3 @@ national-id-validator-generator/
 ├── requirements.txt        # List of Python dependencies
 └── README.md               # This file
 ```
-
-## Contributing
-
-If you'd like to contribute to the project, feel free to fork the repository and submit pull requests. Please make sure to follow the code of conduct and ensure the project runs correctly before submitting your changes.
-
-## License
-
-This project is licensed under the MIT License.
-
-## Contact
-
-Developed By ❤️ Eng. Muhammed Mustafa Morad  
-[LinkedIn](https://www.linkedin.com/in/muhammed-morad) | [Facebook](https://www.facebook.com/muhammed.morad) | [WhatsApp](https://wa.me/201234567890)
-
