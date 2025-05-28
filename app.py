@@ -156,8 +156,16 @@ with t1:
             st.error(f"{i18n['error_prefix'][lang]} {msg}")
 
 with t2:
+    min_date = date(1900, 1, 1)
+    max_date = date(2025, 12, 31)
     st.header(i18n['tab_generate'][lang])
-    bd = st.date_input(i18n['date_input'][lang], value=date.today(), key='gen_date')
+    bd = st.date_input(
+        i18n['date_input'][lang],
+        value=date.today(),
+        min_value=min_date,
+        max_value=max_date,
+        key='gen_date'
+    )
     gender_opt = st.selectbox(i18n['gender_input'][lang], options=['Male','Female'], format_func=lambda x: {'Male':{'en':'Male','ar':'ذكر'}[lang], 'Female':{'en':'Female','ar':'أنثى'}[lang]}[x], key='gen_gender')
     gov_select = st.selectbox(i18n['governorate_input'][lang], options=gov_codes, format_func=lambda x: gov_info[int(x)][lang], key='gen_gov')
     if st.button(i18n['generate_button'][lang], key='gen_btn'):
